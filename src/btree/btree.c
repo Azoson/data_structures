@@ -1,4 +1,3 @@
-//! gcc -o btree.bin btree.c -W -Wall -O3 -std=gnu99 
 /* 
  * btree.c
  * 
