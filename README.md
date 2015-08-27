@@ -10,31 +10,37 @@ Especially I always confuse to choose libraries in C, so I want to store my own 
 
 How to build
 ----
-0. Clone this repository
-```
-$ git clone hoge && cd hoge
-```
 
-1. Install gyp/ninja
+1. Clone this repository
 
-```
-$ sudo apt-get install gyp ninja-build
-```
+   ```
+   $ git clone hoge && cd hoge
+   ```
+2. Install gyp/ninja
+ 
+   ```
+   $ sudo apt-get install gyp ninja-build
+   ```
+3. Execute ./generate_gyp.sh
 
-2. Execute ./generate_gyp.sh
+   ```
+   $ ./generate_gyp.sh
+   ```
+4. Build
 
-```
-$ ./generate_gyp.sh
-```
+   ```
+   $ ninja -C ./out/Release -j5
+   ```
+5. Execute
 
-3. Build
+   ```
+   $ ./out/Release/btree.bin
+   ```
 
-```
-$ ninja -C ./out/Release -j5
-```
+How to use as a library
+---
+After the above build process, `./out/Release/obj/libdst.a` will be generated. You can use it with header files in `inc` directory.
 
-4. Execute
-
-```
-$ ./out/Release/btree.bin
-```
+LICENSE
+---
+2-Clause BSD as shown in each files.
