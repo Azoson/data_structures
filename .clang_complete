@@ -1,0 +1,2 @@
+-I./inc
+-I./third_party/googletest/googletest/include
