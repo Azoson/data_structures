@@ -14,7 +14,8 @@ How to build
 1. Clone this repository
 
    ```
-   $ git clone hoge && cd hoge
+   $ git clone https://github.com/amiq11/data_structures.git && cd data_structures
+   $ git submodule init && git submodule update
    ```
 2. Install gyp/ninja
  
